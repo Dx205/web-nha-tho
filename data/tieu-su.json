@@ -1,0 +1,25 @@
+{
+  "gioi-thieu": {
+    "ho-ten": "Vũ Quang Viễn ",
+   
+    "sinh-nam": "03-06-1950",
+    "tom-tat": "Tóm tắt ngắn gọn về cuộc đời, sự nghiệp và đóng góp văn học của ông. Ông là người đã dành cả cuộc đời để ghi lại những vần thơ về quê hương, gia đình và tình yêu đất nước..."
+  },
+  "timeline": [
+    {
+      "nam": "1945",
+      "tieu-de": "Sinh ra tại quê hương Hải Anh , Ninh Bình ( Nam Định cũ )",
+      "noi-dung": "Ông sinh ra tại một vùng quê giàu truyền thống hiếu học. Ngay từ nhỏ, ông đã bộc lộ niềm đam mê lớn với văn học dân gian và ca dao."
+    },
+    {
+      "nam": "1965",
+      "tieu-de": "Những vần thơ đầu tiên",
+      "noi-dung": "Bắt đầu sáng tác những tác phẩm đầu tay khi tham gia vào các phong trào văn nghệ địa phương. Các bài thơ thời kỳ này mang đậm hơi thở cuộc sống và tình yêu đôi lứa."
+    },
+    {
+      "nam": "1980",
+      "tieu-de": "Xuất bản tập thơ đầu tiên",
+      "noi-dung": "Tập thơ chính thức đầu tiên được xuất bản, đánh dấu một bước ngoặt lớn trong sự nghiệp văn chương của ông, nhận được nhiều lời khen ngợi từ giới phê bình."
+    }
+  ]
+}

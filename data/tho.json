@@ -1,0 +1,33 @@
+{
+  "tac-gia": {
+    "ten": "Tên Ông Nội",
+    "nam-sinh": 1940,
+    "que-quan": "Quê quán của ông"
+  },
+  "danh-sach-tho": [
+    {
+      "id": "bai-tho-so-1",
+      "tieu-de": "Bài Thơ Đầu Tiên",
+      "nam-sang-tac": 1980,
+      "mo-ta-ngan": "Cảm xúc về một buổi chiều thu quê hương...",
+      "noi-dung": [
+        "Câu thơ thứ nhất",
+        "Câu thơ thứ hai",
+        "Câu thơ thứ ba",
+        "Câu thơ thứ tư"
+      ]
+    },
+    {
+      "id": "bai-tho-so-2",
+      "tieu-de": "Ký Ức Tuổi Thơ",
+      "nam-sang-tac": 1985,
+      "mo-ta-ngan": "Ghi lại những kỷ niệm ngày ấu thơ bên gia đình.",
+      "noi-dung": [
+        "Đoạn thơ này",
+        "Gồm có nhiều dòng",
+        "Cứ mỗi phần tử",
+        "Là một dòng thơ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+/* Reset viền và khoảng cách mặc định của trình duyệt */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Bạn có thể đổi font khác mang tính văn chương sau */
+}
+
+/* Định dạng thanh Taskbar chính */
+.navbar {
+    background-color: #2c3e50; /* Màu nền xanh xám đậm, trang trọng */
+    color: white;
+    padding: 15px 0;
+    position: sticky; /* Ghim thanh menu trên cùng khi cuộn chuột */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng các chữ cái trong thanh menu */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào chữ */
+.nav-links li a:hover {
+    color: #f1c40f; /* Màu vàng nhạt */
+}

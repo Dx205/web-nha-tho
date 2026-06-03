@@ -1,0 +1,522 @@
+/* Style chung cho toàn trang */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Khung chứa nội dung tiểu sử */
+.bio-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Phần giới thiệu trên cùng (Flexbox chia đôi: Ảnh trái, chữ phải) */
+.bio-intro {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.bio-avatar img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bio-text h1 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+.bio-years {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bio-summary {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Thiết kế trục đường thẳng đứng cho Timeline */
+.bio-timeline h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.timeline-wrapper {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #2c3e50; /* Đường trục dọc */
+}
+
+/* Từng khối mốc thời gian */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* Dấu chấm tròn nằm đè lên trục dọc */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 22px;
+    width: 12px;
+    height: 12px;
+    background-color: #e74c3c;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #2c3e50;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.timeline-title {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.timeline-content {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive cho điện thoại di động */
+@media (max-width: 768px) {
+    .bio-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* --- PHẦN THƯ VIỆN ẢNH --- */
+
+/* Lưới xếp ảnh tự động vừa khung */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+
+/* Định dạng từng bức ảnh trong lưới */
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cắt ảnh cho vuông vức không bị méo */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-img:hover {
+    transform: scale(1.03); /* Phóng to nhẹ khi di chuột */
+    filter: brightness(1.1); /* Sáng lên một chút */
+}
+
+/* Khung nền đen khi phóng to ảnh (Modal) */
+.modal {
+    display: none; /* Mặc định ẩn đi */
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Nền đen mờ trong suốt */
+}
+
+/* Bức ảnh được phóng to */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+/* Hiệu ứng zoom mượt mà */
+@keyframes zoomIn {
+    from {transform: scale(0.8); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* Chú thích dưới ảnh phóng to */
+#image-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Nút tắt (Dấu X) */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #e74c3c;
+}
+
+/* --- PHẦN LIÊN HỆ --- */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Chia đều không gian cho 2 cột */
+.contact-info, .contact-form {
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.info-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Định dạng form điền thông tin */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box; /* Giữ khung không bị tràn */
+}
+
+/* Nút bấm gửi */
+.submit-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e74c3c; /* Đổi màu khi di chuột */
+}
+
+/* Responsive: Tự động gập thành 1 cột trên điện thoại */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+/* --- PHẦN TRANG CHỦ --- */
+
+/* Banner chính */
+.hero-banner {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://via.placeholder.com/1920x600?text=Hinh+Nen+Trang+Chu');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-quote {
+    font-size: 22px;
+    font-style: italic;
+    color: #ecf0f1;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* Các nút bấm chung */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+.btn-outline {
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    margin-top: 15px;
+}
+
+.btn-outline:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Các khối Section */
+.home-section {
+    padding: 60px 20px;
+}
+
+.bg-light {
+    background-color: #ecf0f1;
+}
+
+/* Cột Tiểu sử */
+.home-bio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.home-bio-img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.home-bio-text h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.home-bio-text p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Thẻ tác phẩm nổi bật */
+.featured-poems {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.featured-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1;
+    max-width: 400px;
+    border-top: 4px solid #2c3e50;
+}
+
+.featured-card h3 {
+    margin-top: 0;
+    color: #e74c3c;
+}
+
+.poem-preview {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.featured-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    .home-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+    .featured-poems {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Trình phát âm thanh trên trang chủ */
+.audio-player {
+    background-color: rgba(0, 0, 0, 0.4); /* Nền đen mờ trong suốt */
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px); /* Hiệu ứng làm mờ cảnh phía sau kính */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.audio-player p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #ecf0f1;
+    font-style: italic;
+}
+
+/* Chỉnh lại thanh controls mặc định của trình duyệt cho gọn */
+.audio-player audio {
+    height: 35px;
+    outline: none;
+}
+
+/* --- PHẦN NHẠC THƠ (PLAYLIST) --- */
+.audio-page-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.audio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.audio-header h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.audio-header p {
+    color: #555;
+    font-style: italic;
+}
+
+.audio-playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Thẻ chứa từng bài hát */
+.audio-track {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-left: 5px solid #3498db; /* Viền xanh bên trái tạo điểm nhấn */
+    transition: transform 0.2s ease;
+}
+
+.audio-track:hover {
+    transform: translateX(5px); /* Trượt nhẹ sang phải khi di chuột */
+}
+
+.track-info h3 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.track-info p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Kéo dài thanh phát nhạc */
+.audio-track audio {
+    height: 40px;
+    flex-grow: 1;
+    max-width: 450px;
+    outline: none;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 600px) {
+    .audio-track {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-track audio {
+        width: 100%;
+        max-width: 100%;
+    }
+}

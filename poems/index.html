@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tác Phẩm - Di Sản Thơ</title>
+    
+    <!-- Lùi 1 thư mục (../) để lấy CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/poem.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Trang Chủ</a>
+            <ul class="nav-links">
+    <li><a href="tieu-su.html">Tiểu Sử</a></li>
+    <li><a href="poems/index.html">Tác Phẩm</a></li>
+    <li><a href="thu-vien-anh.html">Thư Viện Ảnh</a></li>
+    <li><a href="nhac-tho.html">Nhạc Thơ</a></li>
+    <li><a href="lien-he.html">Liên Hệ</a></li>
+</ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="poem-section">
+            <h2>Toàn Bộ Tác Phẩm</h2>
+            <div id="poem-grid" class="poem-grid">
+                <!-- Javascript sẽ tự động tải thơ từ file JSON vào đây -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Lùi 1 thư mục (../) để lấy JS -->
+    <script src="../js/poem-loader.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
