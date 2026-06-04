@@ -1,32 +1,110 @@
 {
   "tac-gia": {
-    "ten": "Tên Ông Nội",
-    "nam-sinh": 1940,
-    "que-quan": "Quê quán của ông"
+    "ten": "Vũ Quang Viễn",
+    "nam-sinh": 1950,
+    "que-quan": "Hải Anh, Nam Định"
   },
   "danh-sach-tho": [
     {
-      "id": "bai-tho-so-1",
-      "tieu-de": "Bài Thơ Đầu Tiên",
-      "nam-sang-tac": 1980,
-      "mo-ta-ngan": "Cảm xúc về một buổi chiều thu quê hương...",
+      "id": "nha-minh",
+      "tieu-de": "Nhà Mình",
+      "nam-sang-tac": "Trích tập thơ",
+      "mo-ta-ngan": "Bài thơ bình dị, mộc mạc tả cảnh quê nhà và tình cảm gia đình, được ông viết tặng riêng cho cháu đích tôn Vũ Quốc Đại.",
       "noi-dung": [
-        "Câu thơ thứ nhất",
-        "Câu thơ thứ hai",
-        "Câu thơ thứ ba",
-        "Câu thơ thứ tư"
+        "Nhà mình đằng trước có sông",
+        "Có đường thẳng tắp có đồng lúa xanh",
+        "Có tường xây mới bao quanh",
+        "Chuối sau cau trước như tranh bốn mùa",
+        "Dưới ao tôm cá lượn lờ",
+        "Gà nuôi cũng đủ để thừa trứng ăn",
+        "Nhà mình ngói cổ năm gian",
+        "Từ đường điện sáng hương nhang thơm đều",
+        "Bà mình đi chợ hai chiều",
+        "Ông mình sắp được nghỉ hưu trí rồi",
+        "Mình về bản quán mình thôi",
+        "Quê hương yêu dấu bao người chờ mong."
       ]
     },
     {
-      "id": "bai-tho-so-2",
-      "tieu-de": "Ký Ức Tuổi Thơ",
-      "nam-sang-tac": 1985,
-      "mo-ta-ngan": "Ghi lại những kỷ niệm ngày ấu thơ bên gia đình.",
+      "id": "nho-hoi-con-ve",
+      "tieu-de": "Nhớ Hội Con Về",
+      "nam-sang-tac": "Trang thơ in bạt (2025)",
+      "mo-ta-ngan": "Những dòng thơ dặn dò con cháu nhớ về thăm quê trong dịp lễ hội chùa Lương truyền thống của quê hương Hải Anh.",
       "noi-dung": [
-        "Đoạn thơ này",
-        "Gồm có nhiều dòng",
-        "Cứ mỗi phần tử",
-        "Là một dòng thơ"
+        "Tin vui con báo mẹ nghe",
+        "Hội này con sẽ về quê thăm nhà",
+        "Các em con đã có quà",
+        "Áo gụ chùng thâm để bà đi quy",
+        "Biết mua tặng mẹ cái gì",
+        "Áo tân thời để mẹ đi diễu hành",
+        "Quê mình nổi tiếng chè xanh",
+        "Con luôn vẫn nhớ cua canh đầu mùa",
+        "Nhớ kiệu chật kín sân Chùa",
+        "Tổ tôm điếm đánh sáng trưa vang rền",
+        "Giao lưu văn nghệ thâu đêm",
+        "Hoa đăng đẹp quá người xem chật bờ",
+        "Chen nhau leo chiếc cầu Ngói",
+        "Trẻ con bắt vịt dưới hồ nước trong",
+        "Xem lên đồng ở phủ Đông",
+        "Tế nam tế nữ nhìn không muốn về",
+        "Cổ truyền lễ rước vùng quê",
+        "Thập phương đông đúc người xe rợp đường",
+        "Mừng vui đi giữa quê hương",
+        "Trong ngày lễ hội chùa Lương quê nhà./."
+      ]
+    },
+    {
+      "id": "cau-ngoi-que-ta",
+      "tieu-de": "Cầu Ngói Quê Ta",
+      "nam-sang-tac": "Trang thơ in bạt (2025)",
+      "mo-ta-ngan": "Niềm tự hào về di sản Cầu Ngói cổ kính - biểu tượng văn hóa của quê hương bao đời nay.",
+      "noi-dung": [
+        "Chiếc cầu ngói cổ ở quê ta",
+        "Đêm xuống trông xa ngỡ tưởng nhà",
+        "Mái ngói, tường xây dầm dãi nắng",
+        "Cột tròn, trụ đá chống phong ba",
+        "Cửa chào sớm tối người đi đến",
+        "Lan tiễn ngày đêm khách lại qua",
+        "Di sản tổ tiên xưa để lại",
+        "Lưu danh truyền nức tiếng gần xa./."
+      ]
+    },
+    {
+      "id": "tham-cau-ngoi",
+      "tieu-de": "Thăm Cầu Ngói",
+      "nam-sang-tac": "Trang thơ in bạt (2025)",
+      "mo-ta-ngan": "Cảm xúc bâng khuâng khi có dịp về thăm lại chiếc Cầu Ngói quê hương sau bao ngày xa cách.",
+      "noi-dung": [
+        "Ao ước về quê cũng đã lâu",
+        "Hôm nay có dịp đến thăm cầu",
+        "Bao năm dãi nắng phai màu ngói",
+        "Mấy thuở dầm mưa gỗ bạc phau",
+        "Chín khúc uốn cong ôm chặt đất",
+        "Hai hàng trụ đứng ngậm sông sâu",
+        "Hành lang ai đó ngồi hóng mát",
+        "Hoa phượng bay bay đọng mái đầu."
+      ]
+    },
+    {
+      "id": "chao-mung-khanh-thanh",
+      "tieu-de": "Chào Mừng Lễ Khánh Thành Liên Hoa Bảo Tháp",
+      "nam-sang-tac": "Trang thơ in bạt (2025)",
+      "mo-ta-ngan": "Khúc ca hân hoan mừng ngày khánh thành công trình kiến trúc tâm linh Liên Hoa Bảo Tháp.",
+      "noi-dung": [
+        "Hôm nay tôi đến thăm chùa",
+        "Mừng vui Bảo Tháp cũng vừa xây xong",
+        "Chín tầng ngói lượn uốn cong",
+        "Phật ngồi tự tại ung dung sáng ngời",
+        "Vươn cao đón gió biển khơi",
+        "Âm dương hòa hợp giữ trời đầy sao",
+        "Lá hoa tung cánh vẫy chào",
+        "Hồ in bóng nước kết giao ân tình",
+        "Phù hộ muôn vạn sinh linh",
+        "Cũng chung nhau hưởng thái bình ấm no",
+        "Cảm ơn người giúp đỡ cho",
+        "Gửi vào tiếng hát câu hò ngợi ca",
+        "Chào mừng lễ hội tháng ba",
+        "Có thêm Bảo Tháp Liên Hoa vui cùng"
       ]
     }
   ]

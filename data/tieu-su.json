@@ -1,25 +1,35 @@
 {
   "gioi-thieu": {
-    "ho-ten": "Vũ Quang Viễn ",
-   
-    "sinh-nam": "03-06-1950",
-    "tom-tat": "Tóm tắt ngắn gọn về cuộc đời, sự nghiệp và đóng góp văn học của ông. Ông là người đã dành cả cuộc đời để ghi lại những vần thơ về quê hương, gia đình và tình yêu đất nước..."
+    "ho-ten": "Vũ Quang Viễn",
+    "but-danh": "",
+    "cuoc-doi": "Sinh năm 1950",
+    "tom-tat": "Nguyên Trưởng ban văn hóa xã Hải Anh, tỉnh Nam Định (nghỉ hưu năm 2010). Là Đảng viên vinh dự nhận huy hiệu 45 năm tuổi Đảng (2025). Ông là người luôn gắn bó sâu sắc với các hoạt động văn hóa địa phương, đặc biệt là Lễ hội Quần Anh từ năm 1990, và đã để lại nhiều dấu ấn nghệ thuật qua các tập thơ, bài hát ngợi ca quê hương."
   },
   "timeline": [
     {
-      "nam": "1945",
-      "tieu-de": "Sinh ra tại quê hương Hải Anh , Ninh Bình ( Nam Định cũ )",
-      "noi-dung": "Ông sinh ra tại một vùng quê giàu truyền thống hiếu học. Ngay từ nhỏ, ông đã bộc lộ niềm đam mê lớn với văn học dân gian và ca dao."
+      "nam": "1990",
+      "tieu-de": "Gắn bó với Lễ hội Quần Anh",
+      "noi-dung": "Bắt đầu tham gia Ban Tổ chức Lễ hội Quần Anh và cống hiến liên tục cho việc gìn giữ, phát huy nét đẹp văn hóa truyền thống của địa phương từ đó cho đến nay."
     },
     {
-      "nam": "1965",
-      "tieu-de": "Những vần thơ đầu tiên",
-      "noi-dung": "Bắt đầu sáng tác những tác phẩm đầu tay khi tham gia vào các phong trào văn nghệ địa phương. Các bài thơ thời kỳ này mang đậm hơi thở cuộc sống và tình yêu đôi lứa."
+      "nam": "2010",
+      "tieu-de": "Hoàn thành công tác quản lý",
+      "noi-dung": "Chính thức nghỉ hưu sau nhiều năm cống hiến tận tâm với vai trò Trưởng ban văn hóa xã Hải Anh, tỉnh Nam Định."
     },
     {
-      "nam": "1980",
-      "tieu-de": "Xuất bản tập thơ đầu tiên",
-      "noi-dung": "Tập thơ chính thức đầu tiên được xuất bản, đánh dấu một bước ngoặt lớn trong sự nghiệp văn chương của ông, nhận được nhiều lời khen ngợi từ giới phê bình."
+      "nam": "2015",
+      "tieu-de": "Ra mắt tập thơ \"Nhắn về thăm hội quê ta\"",
+      "noi-dung": "Xuất bản tập thơ và tự hào in 150 cuốn dành tặng cho 26 xóm, 5 trường học cùng các đại biểu về dự Lễ hội truyền thống Quần Anh."
+    },
+    {
+      "nam": "2025",
+      "tieu-de": "Dấu ấn 45 năm tuổi Đảng & Trang thơ lần 2",
+      "noi-dung": "Vinh dự nhận huy hiệu 45 năm tuổi Đảng. Cùng năm, ông ra mắt trang thơ lần 2 gồm 85 bài thơ được in sáng tạo trên vải bạt và nhựa. Điểm nhấn đặc biệt là mỗi bài thơ đều được kết hợp với những hình ảnh tươi đẹp của quê hương."
+    },
+    {
+      "nam": "2026",
+      "tieu-de": "Ra mắt các tác phẩm âm nhạc",
+      "noi-dung": "Trình làng 2 bài hát ngợi ca quê hương. Các tác phẩm đã được phát sóng rộng rãi trên đài truyền thanh của xã và vang lên rộn rã trong suốt 4 ngày diễn ra lễ hội."
     }
   ]
 }
